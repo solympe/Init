@@ -1,0 +1,1 @@
+ifconfig | grep -e ': flags=\|ether ' | cut -d'<' -f1 | cut -d$'\t' -f2 | head -n5 | tail -n2
