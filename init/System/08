@@ -1,0 +1,2 @@
+create key: ssh-keygen -t rsa -P ""
+view key: /root/.ssh/id_rsa
