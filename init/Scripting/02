@@ -1,1 +1,3 @@
-pgrep -u $USER | kill $PID
+USER=$(w | awk '{print $1}' | head -n3 | tail -n1)
+echo $USER
+pkill -u $USER | skill -KILL -u $USER
